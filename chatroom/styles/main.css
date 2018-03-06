@@ -1,0 +1,62 @@
+#header{
+    height: 100px;
+    background-color: aliceblue;
+}
+#message{
+    width:60%;
+    height:600px;
+    /*border: dotted;*/
+    float: left;
+    background-color: white;
+}
+
+#showren {
+    width: 40%;
+    height: 600px;
+    /*border: dotted;*/
+    background-color: red;
+    float: left;
+}
+#history{
+    width: auto;
+    height: 400px;
+    background-color: white;
+    overflow: scroll;
+}
+#toolblank{
+    height: 50px;
+    background-color: darkgrey;
+    width: auto;
+}
+#sendm{
+    float: left;
+}
+textarea{
+    width: 550px;
+}
+button{
+    width: 150px;
+    height: 150px;
+}
+#logpage{
+    position: fixed;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    padding: 300px;
+    background-color: rgba(5,5,5,0.5);
+    color: #ffffff;
+    text-align: center;
+
+}
+#logname{
+    display: none;
+
+}
+#open{
+   float: left;
+}
+#close{
+    display: none;
+}

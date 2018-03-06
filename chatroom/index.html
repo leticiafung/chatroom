@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Let's chat</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<div id="header">
+    <h3> Chatting Room<h3>
+        <p> welcome,my friend !</p>
+</div>
+<div id = "message">
+    <!--显示历史消息-->
+    <div id="history">
+    </div>
+    <div id="toolblank">
+
+    </div>
+    <div id="send">
+       <div id="sendm">
+        <!--<input id="sendbt" type="text" size="50">-->
+           <!--显示发送消息区域-->
+           <textarea rows="10" cols="25" placeholder="请输入" id="enter"></textarea>
+       </div>
+        <div id="sendbt">
+           <button type="submit">发送</button>
+            <!--//此处类型考虑一下兼容性！！！-->
+
+       </div>
+    </div>
+</div>
+<div id = "showren">
+    <!--<img src="image/a1.png" id ='open' >-->
+    <!--此处是否多余-->
+    <div id="online">
+        <img src="image/a2.png" id ='open' />
+        <img src="image/a1.png" id ='close' />
+         <p id="totalnum">在线好友: 0人</p>
+    </div>
+</div>
+<div id="logpage">
+<p id="tip">正在连接至服务器......</p>
+    <div id="logname">
+        <input type="text" placeholder="昵称" id="myname"/>
+        <input type="button" value="登录" id="nameup"/>
+
+    </div>
+</div>
+<!--<script type="text/javascript">-->
+
+<!--function A(){-->
+    <!--var that = this;-->
+    <!--this.p = function(){-->
+        <!--var c = that.p1()+'shiwo';-->
+        <!--alert(c);-->
+
+    <!--}-->
+<!--A.prototype.p1 = function(){-->
+    <!--return 'bushi';-->
+<!--};-->
+<!--var a = new A();-->
+<!--a.p();-->
+
+<!--</script>-->
+
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="scripts/chatroom.js"></script>
+</body>
+</html>
